@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'applications',
     'students',
     'companies',
+     'tailwind',
 ]
 
 MIDDLEWARE = [
