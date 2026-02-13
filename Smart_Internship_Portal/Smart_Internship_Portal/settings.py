@@ -41,8 +41,15 @@ INSTALLED_APPS = [
     'applications',
     'students',
     'companies',
-     'tailwind',
+    'tailwind',
+    'django_browser_reload',
+    'theme',
 ]
+
+
+
+TAILWIND_APP_NAME = 'theme' # This is the name of the app that will be used to generate the tailwind files
+INTERNAL_IPS = ['127.0.0.1']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -52,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+      "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'Smart_Internship_Portal.urls'
@@ -122,3 +130,7 @@ AUTH_USER_MODEL = 'accounts.User'
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
