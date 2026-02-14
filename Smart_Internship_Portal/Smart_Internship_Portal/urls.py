@@ -20,10 +20,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from . import views
+from students import views as stu_views
 
 urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
     
     path('admin/', admin.site.urls),
-    path('',views.test,name="test")
+    path('',views.test,name="test"),
+    
+    path('student/', stu_views.student,name='students'),
+    
 ]
