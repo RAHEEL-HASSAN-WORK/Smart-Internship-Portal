@@ -1,0 +1,27 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind Test</title>
+    {% tailwind_css %}
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
+        <h1 class="text-3xl font-bold text-blue-600 mb-4">
+            Tailwind is Working 🚀
+        </h1>
+
+        <p class="text-gray-600 mb-6">
+            If you see styled text and a shadow card, your setup is correct.
+        </p>
+
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-300">
+            Test Button
+        </button>
+    </div>
+
+</body>
+</html>
+
